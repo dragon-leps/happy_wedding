@@ -538,6 +538,11 @@ template {
   height: 63px;
 }
 
+.svg-play-main {
+  width: 72px;
+  height: 72px;
+}
+
 .svg-shield {
   width: 63px;
   height: 58px;
@@ -960,6 +965,10 @@ button img {
   padding-top: 0;
 }
 
+.about-us-section .container {
+  padding: 0 0px;
+}
+
 .about-us {
   display: flex;
   flex: 1 0 auto;
@@ -973,20 +982,24 @@ button img {
   height: 289px;
   margin-bottom: 32px;
   background: rgb(253, 51, 51);
-  padding: 0px 30px;
+  margin: 0px 10px;
   overflow: hidden;
 }
 
-.about-us-photo img {
+.about-us-photo .img-about {
+  height: auto;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0px 30px;
+  margin: -159px 0px;
 }
 
 .about-us-text {
   margin-left: 0px;
+  padding: 0 20px;
   padding-top: 130px;
+}
+
+.about-us-text p {
+  margin: 25px 0 0 0;
 }
 
 .h2-arrows {
@@ -999,7 +1012,7 @@ button img {
   margin-bottom: 24px;
   position: absolute;
   top: 320px;
-  left: 0px;
+  left: 20px;
   z-index: 3;
 }
 
@@ -1735,7 +1748,19 @@ textarea.form-input {
 }
 
 .footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 245px;
   text-align: center;
+}
+
+.footer .container .social {
+  width: auto;
+}
+
+.footer .container .social .social-link {
+  margin-bottom: 0;
 }
 
 .rights {
@@ -1868,6 +1893,10 @@ textarea.form-input {
     padding-top: 80px;
   }
 
+  .about-us-section .container {
+    padding: 0 20px;
+  }
+
   .about-us {
     flex-direction: row;
   }
@@ -1880,13 +1909,13 @@ textarea.form-input {
     padding: 0px;
   }
 
-  .about-us-photo img {
+  .about-us-photo .img-about {
     width: 100%;
     margin: 0;
   }
 
   .about-us-text {
-    padding-top: 80px;
+    padding: 80px 0 0 0;
     margin-left: 24px;
     width: calc(100% - 164px - 24px);
   }
@@ -1894,9 +1923,10 @@ textarea.form-input {
   .h2-arrows {
     position: absolute;
     top: 0px;
+    left: 15px;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: calc(100% - 20px);
   }
 
   .h2-arrows h2 {
@@ -2135,7 +2165,12 @@ textarea.form-input {
   }
 
   .footer .container {
+    width: auto;
+  }
+
+  .footer .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -2245,7 +2280,7 @@ textarea.form-input {
     border-radius: 24px;
   }
 
-  .about-us-photo img {
+  .about-us-photo .img-about {
     width: 100%;
   }
 
@@ -2259,9 +2294,9 @@ textarea.form-input {
     position: absolute;
     z-index: 3;
     top: 26px;
-    left: 480px;
+    left: 490px;
     flex-direction: row;
-    width: calc(100% - 360px - 120px);
+    width: calc(100% - 360px - 140px);
     align-items: center;
   }
 
@@ -2523,5 +2558,23 @@ textarea.form-input {
     width: auto;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-us-photo .img-about {
+    margin: -112px 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-us-photo .img-about {
+    margin: -77px 0px;
+  }
+}
+
+@media (max-width: 408px) {
+  .about-us-photo .img-about {
+    margin: -26px 0px;
   }
 }
