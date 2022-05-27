@@ -1130,6 +1130,60 @@ button img {
   z-index: 100;
 }
 
+.need-other-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.need-other-format h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.need-other-format p {
+  font-size: 14px;
+}
+
+.need-other-format p span {
+  font-weight: 700;
+  color: #ddad96;
+}
+
+.need-item {
+  margin-bottom: 32px;
+}
+
+.need-item:last-child {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.need-item:last-child .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.need-item:last-child .right-column button {
+  margin-right: 0px;
+  height: 52px;
+}
+
+.need-item:last-child p {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: rgba(18, 17, 39, 0.48);
+}
+
+.need-item:last-child p .privacy {
+  font-weight: 400;
+  color: #121127;
+}
+
 .swiper {
   position: relative;
   z-index: 1;
@@ -1395,7 +1449,7 @@ button img {
 }
 
 .form-input {
-  height: 50px;
+  height: 52px;
   padding: 0 20px;
   border-radius: 5px;
   width: 100%;
@@ -2027,6 +2081,22 @@ textarea.form-input {
     right: calc(31.65% - 78px);
   }
 
+  .need-other-format {
+    flex-direction: column;
+  }
+
+  .need-other-format h2 {
+    font-size: 32px;
+  }
+
+  .need-other-format p {
+    font-size: 16px;
+  }
+
+  .need-item:last-child .right-column {
+    flex-direction: row;
+  }
+
   .turnaround p {
     font-size: 20px;
   }
@@ -2407,6 +2477,19 @@ textarea.form-input {
   .butns-pos {
     bottom: 32px;
     right: 32px;
+  }
+
+  .need-other-format {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .need-item {
+    margin-bottom: 0px;
+  }
+
+  .need-item:last-child .right-column button {
+    margin-right: 8px;
   }
 
   .turnaround p {
