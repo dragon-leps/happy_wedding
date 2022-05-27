@@ -735,7 +735,7 @@ button img {
   display: flex;
   justify-content: space-between;
   width: 140px;
-  height: 48px;
+  height: 44px;
 }
 
 .arrow {
@@ -1888,6 +1888,7 @@ textarea.form-input {
   }
 
   .butns {
+    height: 48px;
     width: 156px;
   }
 
