@@ -654,6 +654,8 @@ h5 {
   font-weight: 700;
   font-size: 16px;
   color: #121127;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 p {
@@ -1277,6 +1279,10 @@ button img {
   margin-bottom: 0;
 }
 
+.why-us h2 {
+  margin-bottom: 48px;
+}
+
 .list {
   display: flex;
   flex-direction: column;
@@ -1292,7 +1298,7 @@ button img {
 }
 
 .img-wrap {
-  height: 90px;
+  margin-bottom: 24px;
 }
 
 .counter {
@@ -1720,6 +1726,7 @@ textarea.form-input {
   color: #4e4e4e;
   line-height: 28.8px;
   text-align: left;
+  margin-top: -8px;
 }
 
 .accordion-body-open {
