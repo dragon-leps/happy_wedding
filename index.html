@@ -11,7 +11,7 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header fixed">
   <div class="container">
     <div class="left-header">
       <div class="logo">
@@ -37,7 +37,7 @@
         <div class="mobile-el"><section class="contact">
   <h4>Contact Info</h4>
 
-  <div class="cont">
+  <div class="contact-wrap">
     <div class="contact1 cont-item">
       <span
         >Worked with these guys on editing wedding videos. Received
@@ -45,14 +45,14 @@
       >
     </div>
 
-    <div class="contact2 cont-item">
-      <div class="svga">
+    <div class="cont-item">
+      <div class="row">
         <svg class="svg svg-mail icon-mail">
           <use xlink:href="images/sprite.svg#mail"></use>
         </svg>
         <a href="mailto:support@website.com">support@website.com</a>
       </div>
-      <div class="svga">
+      <div class="row">
         <svg class="svg svg-phone icon-phone">
           <use xlink:href="images/sprite.svg#phone"></use>
         </svg>
@@ -60,7 +60,7 @@
       </div>
     </div>
 
-    <div class="social cont-item contac2">
+    <div class="social">
       <a href="#" class="social-link">
         <svg class="svg svg-telegram icon-telegram">
           <use xlink:href="images/sprite.svg#telegram"></use>
@@ -101,13 +101,12 @@
       <main class="main">
         <section class="main-section">
           <div class="container">
-            <div class="img-pos1 img-send">
+            <div class="img-decorate _left">
               <svg class="svg svg-send icon-send">
                 <use xlink:href="images/sprite.svg#send"></use>
               </svg>
             </div>
-
-            <div class="img-pos2 img-send">
+            <div class="img-decorate _right">
               <svg class="svg svg-send icon-send">
                 <use xlink:href="images/sprite.svg#send"></use>
               </svg>
@@ -140,7 +139,6 @@
             </div>
           </div>
         </section>
-
         <section class="section container" id="groups">
           <h2 class="h2">
             Happywedding.video is a film making studio that edits wedding videos
@@ -164,7 +162,6 @@
             customers.
           </p>
         </section>
-
         <section class="accent-section section about-us-section" id="about">
           <div class="container">
             <div class="swiper">
@@ -245,7 +242,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="h2-arrows">
                 <h2>About us</h2>
                 <div class="butns">
@@ -264,12 +260,11 @@
             </div>
           </div>
         </section>
-
-        <section class="section prices container" id="price">
+        <section class="prices container" id="price">
           <h2>Formats and prices</h2>
           <div class="wrapper-tabs">
             <div class="tabs">
-              <nav class="tabs-nav">
+              <ul class="tabs-nav">
                 <li class="tabs-nav-item is-active" data-tab-name="tab-1">
                   Teaser
                 </li>
@@ -287,132 +282,123 @@
                   Highlight + Full Documentary
                 </li>
                 <li class="tabs-nav-item" data-tab-name="tab-7">Custom Edit</li>
-              </nav>
+              </ul>
               <div class="tabs-content">
                 <div class="tab is-active tab-1">
-                  <div class="slide">
+                  <div class="tab-row">
                     <div class="price-text">
-                      <div class="price-text-inside">
-                        <div>
-                          <span class="cost">$650</span>
-                          <p class="price-paragr">
-                            The most prevalent package that includes 4-10-min of
-                            highlight edit and 20-60-min of documentary film.
-                          </p>
-                        </div>
-                        <a href="#contact" class="btn btn-link w-100 md"
-                          >Order now</a
-                        >
+                      <div>
+                        <span class="cost">$650</span>
+                        <p class="price-paragr">
+                          The most prevalent package that includes 4-10-min of
+                          highlight edit and 20-60-min of documentary film.
+                        </p>
                       </div>
+                      <a href="#contact" class="btn btn-link w-100 md"
+                        >Order now</a
+                      >
                     </div>
-
-                    <div class="slider-container">
-                      <div class="swiper-price-wrap">
-                        <!--<div class="shadow"></div>-->
-                        <div class="butns-pos">
-                          <div class="butns">
-                            <button class="arrow swiper-button-prev-price">
-                              <svg class="svg svg-line icon-line">
-                                <use xlink:href="images/sprite.svg#line"></use>
-                              </svg>
-                            </button>
-                            <button class="arrow swiper-button-next-price">
-                              <svg class="svg svg-ar_right icon-ar_right">
-                                <use
-                                  xlink:href="images/sprite.svg#ar_right"
-                                ></use>
-                              </svg>
-                            </button>
+                    <div class="swiper-price-wrap">
+                      <div class="butns-pos">
+                        <div class="butns">
+                          <button class="arrow swiper-button-prev-price">
+                            <svg class="svg svg-line icon-line">
+                              <use xlink:href="images/sprite.svg#line"></use>
+                            </svg>
+                          </button>
+                          <button class="arrow swiper-button-next-price">
+                            <svg class="svg svg-ar_right icon-ar_right">
+                              <use
+                                xlink:href="images/sprite.svg#ar_right"
+                              ></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="logo-slider">
+                        <svg class="svg svg-logo-vid icon-logo-vid">
+                          <use xlink:href="images/sprite.svg#logo-vid"></use>
+                        </svg>
+                      </div>
+                      <div class="swiper-price">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="video-wrap">
+                              <a
+                                class="video-link"
+                                href="https://www.youtube.com/watch?=tDVPcqGpEnM"
+                              >
+                                <img
+                                  class="video-media"
+                                  src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
+                                  width="704"
+                                  alt="video"
+                                />
+                              </a>
+                              <button
+                                class="video-button"
+                                aria-label="Run video"
+                              >
+                                <svg class="svg svg-play-main icon-play-main">
+                                  <use
+                                    xlink:href="images/sprite.svg#play-main"
+                                  ></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="video-name">Highlight Vicki & Alex</span>
                           </div>
-                        </div>
-
-                        <div class="video-name">
-                          <span>Highlight Vicki & Alex</span>
-                        </div>
-
-                        <div class="logo-slider">
-                          <svg class="svg svg-logo-vid icon-logo-vid">
-                            <use xlink:href="images/sprite.svg#logo-vid"></use>
-                          </svg>
-                        </div>
-
-                        <div class="swiper-price">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <div class="video-wrap">
-                                <a
-                                  class="video-link"
-                                  href="https://www.youtube.com/watch?=tDVPcqGpEnM"
-                                >
-                                  <img
-                                    class="video-media"
-                                    src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
-                                    width="704"
-                                    alt="video"
-                                  />
-                                </a>
-                                <button
-                                  class="video-button"
-                                  aria-label="Run video"
-                                >
-                                  <svg class="svg svg-play-main icon-play-main">
-                                    <use
-                                      xlink:href="images/sprite.svg#play-main"
-                                    ></use>
-                                  </svg>
-                                </button>
-                              </div>
+                          <div class="swiper-slide">
+                            <div class="video-wrap">
+                              <a
+                                class="video-link"
+                                href="https://www.youtube.com/watch?=tDVPcqGpEnM"
+                              >
+                                <img
+                                  class="video-media"
+                                  src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
+                                  width="704"
+                                  alt="video"
+                                />
+                              </a>
+                              <button
+                                class="video-button"
+                                aria-label="Run video"
+                              >
+                                <svg class="svg svg-play-main icon-play-main">
+                                  <use
+                                    xlink:href="images/sprite.svg#play-main"
+                                  ></use>
+                                </svg>
+                              </button>
                             </div>
-                            <div class="swiper-slide">
-                              <div class="video-wrap">
-                                <a
-                                  class="video-link"
-                                  href="https://www.youtube.com/watch?=tDVPcqGpEnM"
-                                >
-                                  <img
-                                    class="video-media"
-                                    src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
-                                    width="704"
-                                    alt="video"
-                                  />
-                                </a>
-                                <button
-                                  class="video-button"
-                                  aria-label="Run video"
-                                >
-                                  <svg class="svg svg-play-main icon-play-main">
-                                    <use
-                                      xlink:href="images/sprite.svg#play-main"
-                                    ></use>
-                                  </svg>
-                                </button>
-                              </div>
+                            <span class="video-name">Highlight 2</span>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="video-wrap">
+                              <a
+                                class="video-link"
+                                href="https://www.youtube.com/watch?=tDVPcqGpEnM"
+                              >
+                                <img
+                                  class="video-media"
+                                  src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
+                                  width="704"
+                                  alt="video"
+                                />
+                              </a>
+                              <button
+                                class="video-button"
+                                aria-label="Run video"
+                              >
+                                <svg class="svg svg-play-main icon-play-main">
+                                  <use
+                                    xlink:href="images/sprite.svg#play-main"
+                                  ></use>
+                                </svg>
+                              </button>
                             </div>
-                            <div class="swiper-slide">
-                              <div class="video-wrap">
-                                <a
-                                  class="video-link"
-                                  href="https://www.youtube.com/watch?=tDVPcqGpEnM"
-                                >
-                                  <img
-                                    class="video-media"
-                                    src="https://i.ytimg.com/vi/tDVPcqGpEnM/maxresdefault.jpg"
-                                    width="704"
-                                    alt="video"
-                                  />
-                                </a>
-                                <button
-                                  class="video-button"
-                                  aria-label="Run video"
-                                >
-                                  <svg class="svg svg-play-main icon-play-main">
-                                    <use
-                                      xlink:href="images/sprite.svg#play-main"
-                                    ></use>
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
+                            <span class="video-name">Highlight 3</span>
                           </div>
                         </div>
                       </div>
@@ -431,7 +417,6 @@
             </div>
           </div>
         </section>
-
         <section class="need-other-format container">
           <div class="left-column">
             <h3>Need other formats?</h3>
@@ -445,27 +430,33 @@
             </p>
           </div>
           <div class="right-column">
-            <form class="in-right-column">
-              <input
-                id="formEmail"
-                type="text"
-                name="email"
-                class="form-input _req _email"
-                placeholder="Enter email address"
-              />
-              <button class="submit btn" type="submit">Send</button>
+            <form action="#" class="in-right-column form" novalidate>
+              <div class="field">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input control"
+                  placeholder="Enter email address"
+                  required
+                />
+                <span class="input-error-message"></span>
+              </div>
+              <button class="btn lg" type="submit">
+                <span class="submit-text">Send</span>
+                <span class="loader"></span>
+              </button>
             </form>
             <p>
               We care about the protection of your data. read our
               <a
                 class="privacy"
                 href="https://www.youtube.com/watch?=tDVPcqGpEnM"
-                >Privacy policy</a
               >
+                Privacy policy
+              </a>
             </p>
           </div>
         </section>
-
         <section class="turnaround accent-section section">
           <div class="container">
             <h2>14 days turnaround</h2>
@@ -474,14 +465,13 @@
               advance. Just share your calendar of shootings and let's plan the
               year together!
             </p>
-            <strong class="h2 h2-">Short on time?</strong>
+            <strong class="h2">Short on time?</strong>
             <p>
               Haven’t booked your spot yet but need our help ASAP? An expedited
               1 week turnaround time is just 30% more.
             </p>
           </div>
         </section>
-
         <section class="why-us container section" id="why-us">
           <h2>Why us</h2>
           <div class="list">
@@ -497,7 +487,6 @@
                 edits for the first draft.
               </p>
             </div>
-
             <div class="list-item">
               <div class="img-wrap">
                 <img class="img-about" src="images/star.svg" alt="pic1" />
@@ -534,34 +523,29 @@
               </p>
             </div>
           </div>
-
           <div class="counter">
             <div class="counter-item">
               <span class="accent-text">100+ </span>
-              <strong class="object">WEDDINGS</strong>
+              <strong class=" item-name">WEDDINGS</strong>
               <p>we edit annually</p>
             </div>
-
             <div class="counter-item">
               <span class="accent-text">20+</span>
-              <strong class="object">VIDEOGRAPHERS</strong>
+              <strong class=" item-name">VIDEOGRAPHERS</strong>
               <p>are our happy clients</p>
             </div>
-
             <div class="counter-item">
               <span class="accent-text">5</span>
-              <strong class="object">EDITORS</strong>
+              <strong class=" item-name">EDITORS</strong>
               <p>work in our team</p>
             </div>
-
             <div class="counter-item">
               <span class="accent-text">5.0</span>
-              <strong class="object">RATING</strong>
+              <strong class=" item-name">RATING</strong>
               <p>on Facebook reviews</p>
             </div>
           </div>
         </section>
-
         <section class="section accent-section work-process">
           <div class="container">
             <h2 class="center">Work process</h2>
@@ -616,7 +600,6 @@
             </p>
           </div>
         </section>
-
         <section class="our-customers section">
           <div class="container">
             <div class="h2-butns">
@@ -634,7 +617,6 @@
                 </button>
               </div>
             </div>
-
             <div class="swiper-customers">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -658,7 +640,6 @@
                     </div>
                   </div>
                 </div>
-
                 <div class="swiper-slide">
                   <div class="customers-item">
                     <h3 class="customers-title">
@@ -686,45 +667,47 @@
             </div>
           </div>
         </section>
-
-        <section class="lets-start section-margin" id="contact">
+        <section class="lets-start" id="contact">
           <div class="container">
-            <div class="form-wrap">
-              <div class="lets">
+            <div class="lets-start-wrap">
+              <div class="img-wrap">
                 <img src="images/video_img.png" alt="pic1" />
               </div>
-
               <h2>Let's start your journey with happywedding.video now!</h2>
-
               <div class="form-contact-wrap">
-                <div class="form">
-                  <form action="#" id="form" class="form-body">
-                    <div class="form-item">
+                <div class="form-container">
+                  <form action="#" class="form" novalidate>
+                    <div class="form-item field">
                       <label for="formName" class="form-label">Your name</label>
                       <input
                         id="formName"
                         type="text"
                         name="name"
-                        class="form-input _req"
+                        class="form-input control"
                         placeholder="John Doe"
+                        required
+                        data-min="2"
                       />
+                      <span class="input-error-message"></span>
                     </div>
 
-                    <div class="form-item">
+                    <div class="form-item field">
                       <label for="formEmail" class="form-label"
                         >E-mail address</label
                       >
                       <input
                         id="formEmail"
-                        type="text"
+                        type="email"
                         name="email"
-                        class="form-input _req _email"
+                        class="form-input control"
                         placeholder="support@website.com"
+                        required
                       />
+                      <span class="input-error-message"></span>
                     </div>
 
-                    <div class="form-item">
-                      <label for="formEmail" class="form-label"
+                    <div class="form-item field">
+                      <label class="form-label"
                         >Select a format</label
                       >
                       <div class="options">
@@ -809,35 +792,33 @@
                             name="kind"
                             class="options-input"
                           />
-                          <label for="custom" class="options-label"
-                            ><span>Custom Edit</span></label
-                          >
+                          <label for="custom" class="options-label"><span>Custom Edit</span></label>
                         </div>
                       </div>
                     </div>
-
-                    <div class="form-item">
-                      <label for="formMessage" class="form-label"
-                        >Message:</label
-                      >
+                    <div class="form-item field">
+                      <label for="formMessage" class="form-label">Message:</label>
                       <textarea
                         placeholder="Type here"
                         name="message"
                         id="formMessage"
-                        class="form-input"
+                        class="form-input control"
+                        data-max="500"
                       ></textarea>
+                      <span class="input-error-message"></span>
                     </div>
-
-                    <button class="submit btn" type="submit">Send</button>
+                    <button class="btn" type="submit">
+                      <span class="submit-text">Send</span>
+                      <span class="loader"></span>
+                    </button>
                   </form>
                 </div>
-
                 <div class="contact-info-wrap">
                   <div class="contact-info">
                     <section class="contact">
   <h4>Contact Info</h4>
 
-  <div class="cont">
+  <div class="contact-wrap">
     <div class="contact1 cont-item">
       <span
         >Worked with these guys on editing wedding videos. Received
@@ -845,14 +826,14 @@
       >
     </div>
 
-    <div class="contact2 cont-item">
-      <div class="svga">
+    <div class="cont-item">
+      <div class="row">
         <svg class="svg svg-mail icon-mail">
           <use xlink:href="images/sprite.svg#mail"></use>
         </svg>
         <a href="mailto:support@website.com">support@website.com</a>
       </div>
-      <div class="svga">
+      <div class="row">
         <svg class="svg svg-phone icon-phone">
           <use xlink:href="images/sprite.svg#phone"></use>
         </svg>
@@ -860,7 +841,7 @@
       </div>
     </div>
 
-    <div class="social cont-item contac2">
+    <div class="social">
       <a href="#" class="social-link">
         <svg class="svg svg-telegram icon-telegram">
           <use xlink:href="images/sprite.svg#telegram"></use>
@@ -891,11 +872,9 @@
             </div>
           </div>
         </section>
-
         <section class="questions section" id="faq">
           <div class="container">
             <h2>Frequently asked questions</h2>
-
             <div class="accordions">
               <div class="accordion">
                 <div class="accordion-head">
@@ -906,9 +885,11 @@
                     </p>
                   </div>
                   <div class="img-ques">
-                    <svg class="svg svg-arrow-bottom icon-arrow-bottom">
-                      <use xlink:href="images/sprite.svg#arrow-bottom"></use>
-                    </svg>
+                    <div class="img-ques-item">
+                      <svg class="svg svg-arrow-bottom icon-arrow-bottom">
+                        <use xlink:href="images/sprite.svg#arrow-bottom"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-body">
@@ -921,16 +902,17 @@
                   </p>
                 </div>
               </div>
-
               <div class="accordion">
                 <div class="accordion-head">
                   <div class="questions-item">
                     <p>What payment methods do you accept?</p>
                   </div>
                   <div class="img-ques">
-                    <svg class="svg svg-arrow-bottom icon-arrow-bottom">
-                      <use xlink:href="images/sprite.svg#arrow-bottom"></use>
-                    </svg>
+                    <div class="img-ques-item">
+                      <svg class="svg svg-arrow-bottom icon-arrow-bottom">
+                        <use xlink:href="images/sprite.svg#arrow-bottom"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-body">
@@ -943,16 +925,17 @@
                   </p>
                 </div>
               </div>
-
               <div class="accordion">
                 <div class="accordion-head">
                   <div class="questions-item">
                     <p>What is your refund policy?</p>
                   </div>
                   <div class="img-ques">
-                    <svg class="svg svg-arrow-bottom icon-arrow-bottom">
-                      <use xlink:href="images/sprite.svg#arrow-bottom"></use>
-                    </svg>
+                    <div class="img-ques-item">
+                      <svg class="svg svg-arrow-bottom icon-arrow-bottom">
+                        <use xlink:href="images/sprite.svg#arrow-bottom"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
                 <div class="accordion-body">
@@ -972,18 +955,19 @@
             </div>
           </div>
         </section>
-
-        <!--
-        <div class="container">
-          <p><a href="#contact" class="btn btn-link w-100 md">Order now</a></p>
-          <p><button type="submit" class="btn lg">Send</button></p>
-          <p>
-            <button type="submit" class="btn md">
-              Send<img src="images/logo.svg" alt="logo" width="77" height="38" />
-            </button>
-          </p>
+        <div id="popup-server-message" class="popup">
+          <div class="popup-body">
+            <div class="popup-content">
+              <button class="close-popup close">
+                <svg class="svg svg-close icon-close">
+                  <use xlink:href="images/sprite.svg#close"></use>
+                </svg>
+              </button>
+              <div class="popup-text form-message"></div>
+              <button type="button" class="btn close-popup">OK</button>
+            </div>
+          </div>
         </div>
--->
       </main>
       <footer class="footer">
   <div class="container">
@@ -1008,7 +992,6 @@
   </div>
 </footer>
     </div>
-    <span aria-hidden="true" class="scroll-emul"></span>
     <script src="js/app.min.js"></script>
   </body>
 </html>
