@@ -779,7 +779,7 @@ a img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #f0ede6;
 }
 
@@ -1094,9 +1094,9 @@ a img {
 .logo-slider {
   display: flex;
   position: absolute;
-  top: 32px;
-  left: 32px;
-  width: 77px;
+  top: 10px;
+  left: 10px;
+  width: 60px;
   height: 37px;
   z-index: 2;
 }
@@ -1125,7 +1125,7 @@ a img {
 .video-name {
   position: absolute;
   padding: 0 16px;
-  bottom: 16px;
+  bottom: 5px;
   z-index: 1;
   color: white;
   font-size: 18px;
@@ -1707,6 +1707,11 @@ textarea.form-input {
   fill-opacity: 0.8;
 }
 
+.play .video-button,
+.play .video-link {
+  display: none;
+}
+
 .work-process .block {
   background-color: #f0ede6;
   color: #121127;
@@ -2166,6 +2171,11 @@ textarea.form-input {
     font-size: 20px;
   }
 
+  .logo-slider {
+    top: 32px;
+    left: 32px;
+  }
+
   .swiper-price-wrap {
     width: 63%;
     margin: 0;
@@ -2173,6 +2183,10 @@ textarea.form-input {
 
   .butns-pos {
     bottom: -72px;
+  }
+
+  .video-name {
+    bottom: 32px;
   }
 
   .need-other-format {
@@ -2537,6 +2551,10 @@ textarea.form-input {
     width: calc(27% - 24px);
   }
 
+  .logo-slider {
+    width: 77px;
+  }
+
   .swiper-price-wrap {
     width: 73%;
   }
@@ -2554,7 +2572,6 @@ textarea.form-input {
     text-align: left;
     transform: none;
     font-size: 24px;
-    bottom: 32px;
   }
 
   .need-other-format {
